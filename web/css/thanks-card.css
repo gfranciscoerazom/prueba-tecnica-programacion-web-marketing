@@ -1,0 +1,106 @@
+h1 {
+    top: 6%;
+}
+
+.thanks-card-container {
+    color: var(--ghost-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.thanks-card {
+    margin: 2rem;
+    padding: 5rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+.thanks-card p {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* Selecciona el último p que hay dentro de .thanks-card */
+.thanks-card p:nth-child(5) {
+    margin-top: 4rem;
+}
+
+
+.thanks-card p span {
+    font-weight: 700;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.button button {
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    background-color: var(--red-crayola);
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button a button {
+    color: var(--ghost-white);
+    text-decoration: none;
+}
+
+.button a button:hover {
+    background-color: var(--yinmn-blue);
+}
+
+div div .disclaimer {
+    margin-bottom: 0;
+}
+
+small {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+/* Background */
+.fullscreen-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .fullscreen-video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .fullscreen-video {
+        width: auto;
+        height: 100%;
+    }
+}
